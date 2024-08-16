@@ -8,11 +8,11 @@ spring:
       database : customer
       authentication-database: admin
 eureka:
-  instance:
-    hostname: discovery
-  client:
-    service-url:
-      default-zone: http://discovery:8761/eureka
+    client:
+      serviceUrl:
+        defaultZone: http://discovery:8761/eureka/
+      fetch-registry: true
+      register-with-eureka: true
 server:
   port: 8090
 
