@@ -1,9 +1,4 @@
-eureka:
-  instance:
-    hostname: discovery
-  client:
-    service-url:
-      default-zone: http://discovery:8762/eureka
+spring:
   cloud:
     gateway:
       routes:
