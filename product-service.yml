@@ -1,5 +1,12 @@
 spring:
+  kafka:
+    bootstrap-servers: kafka:9092
 
+    producer:
+        acks: -1
+        bootstrap-servers: kafka:9092
+        key-serializer: org.apache.kafka.common.serialization.StringSerializer
+        value-serializer: org.springframework.kafka.support.serializer.JsonSerializer despite this it said it set to localhost instead to ms_kafka
   datasource:
     url: jdbc:postgresql://ms_pg_sql:5432/postgres
     username: medamine
