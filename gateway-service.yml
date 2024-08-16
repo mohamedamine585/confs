@@ -17,8 +17,8 @@ spring:
             - Path=/api/v1/product/**
 eureka:
     client:
-      service-url:
-        default-zone: http://discovery:8761/eureka/
+      serviceUrl:
+        defaultZone: http://discovery:8761/eureka/
       fetch-registry: true
       register-with-eureka: true
 server:
