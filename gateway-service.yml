@@ -21,4 +21,4 @@ spring:
             - Path=/api/v1/product/**
 
 server:
-  port: 8221
+  port: 8222
