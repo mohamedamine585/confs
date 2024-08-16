@@ -1,1 +1,23 @@
+eureka:
+  instance:
+    hostname: discovery
+  client:
+    service-url:
+      default-zone: http://${eureka.instance.hostname}:8761/eureka
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: customer-service
+          uri: lb:http://CUSTOMER-SERVICE
+          predicates:
+            - Path=/api/v1/customer/**
+        - id: product-service
+          uri: lb:http://PRODUCT-SERVICE
+          predicates:
+            - Path=/api/v1/product/**
 
+server:
+  port: 8222
