@@ -7,6 +7,12 @@ spring:
       port: 27017
       database : customer
       authentication-database: admin
+eureka:
+  instance:
+    hostname: discovery
+  client:
+    service-url:
+      default-zone: http://discovery:8761/eureka
 server:
   port: 8090
 
