@@ -24,5 +24,11 @@ spring:
     baseline-version: 0
     user: ${spring.datasource.username}
     password: ${spring.datasource.password}
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://discovery:8761/eureka/
+      fetch-registry: true
+      register-with-eureka: true
 server:
   port: 8050
