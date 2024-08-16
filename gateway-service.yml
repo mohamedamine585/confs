@@ -15,5 +15,11 @@ spring:
           uri: lb:http://PRODUCT-SERVICE
           predicates:
             - Path=/api/v1/product/**
+eureka:
+    client:
+      service-url:
+        default-zone: http://discovery:8761/eureka/
+      fetch-registry: true
+      register-with-eureka: true
 server:
   port: 8222
