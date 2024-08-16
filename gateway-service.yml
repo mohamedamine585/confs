@@ -6,9 +6,6 @@ eureka:
       default-zone: http://discovery:8762/eureka
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
       routes:
         - id: customer-service
           uri: lb:http://CUSTOMER-SERVICE
