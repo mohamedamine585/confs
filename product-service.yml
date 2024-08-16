@@ -1,10 +1,9 @@
 spring:
   kafka:
     producer:
-        acks: 1
-        bootstrap-servers: kafka:9092
-        key-serializer: org.apache.kafka.common.serialization.StringSerializer
-        value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      bootstrap-servers: kafka:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
   datasource:
     url: jdbc:postgresql://ms_pg_sql:5432/postgres
     username: medamine
