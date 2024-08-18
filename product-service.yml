@@ -24,7 +24,7 @@ spring:
 eureka:
     instance:
       hostname:
-          discovery
+          product
     client:
       serviceUrl:
         defaultZone: http://discovery:8761/eureka/
