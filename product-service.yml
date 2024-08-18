@@ -22,6 +22,9 @@ spring:
     user: ${spring.datasource.username}
     password: ${spring.datasource.password}
 eureka:
+    instance:
+      hostname:
+          discovery
     client:
       serviceUrl:
         defaultZone: http://discovery:8761/eureka/
