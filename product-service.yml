@@ -22,12 +22,11 @@ spring:
     user: ${spring.datasource.username}
     password: ${spring.datasource.password}
 eureka:
-    instance:
-      hostname:
-          product
     client:
       serviceUrl:
         defaultZone: http://discovery:8761/eureka/
+    instance:
+      ip-address: 192.168.1.105 
 
 server:
   port: 8050
