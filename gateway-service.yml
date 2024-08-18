@@ -4,8 +4,8 @@ spring:
       discovery:
          enable : true
       routes:
-        - id: product-service
-          uri: lb://PRODUCT-SERVICE
+        - id: product
+          uri: lb://product/
           predicates:
             - Path=/api/v1/product/**
 
