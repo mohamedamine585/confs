@@ -3,6 +3,11 @@ spring:
     gateway:
       discovery:
          enable : true
+    routes:
+        - id: product1-route
+          uri: http://product-service:8050
+          predicates:
+            - Path=/api/v1/product1/**
 eureka:
     client:
       serviceUrl:
