@@ -1,12 +1,12 @@
-
 spring:
-
   cloud:
+    gateway:
       routes:
-        - id: customer-service
-          uri: lb:http://CUSTOMER-SERVICE
+        - id: product-service
+          uri: lb://PRODUCT-SERVICE
           predicates:
-            - Path=/api/v1/customer/**
+            - Path=/api/v1/product/**
+
 eureka:
     client:
       serviceUrl:
