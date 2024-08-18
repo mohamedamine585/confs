@@ -1,13 +1,6 @@
 spring:
   cloud:
-    gateway:
-      discovery:
-         enable : true
-    routes:
-        - id: product-service
-          uri: lb://product-service
-          predicates:
-            - Path=/api/v1/product1/**
+    
 eureka:
     client:
       serviceUrl:
