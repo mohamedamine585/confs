@@ -34,6 +34,7 @@ eureka:
       defaultZone: http://discovery:8761/eureka/
   instance:
     instance:
+    instanceId: ${spring.application.name}:${random.value}
     prefer-ip-address: true
 
 server:
