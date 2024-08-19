@@ -5,6 +5,10 @@ spring:
         locator:
           enabled: true 
       routes:
+        - id: product-websocket
+          uri: lb:ws://PRODUCT-SERVICE
+          predicates:
+            - Path=/api/v1/products
         - id: product-service-route
           uri: lb://PRODUCT-SERVICE  # Use load-balanced URI with Eureka service ID
           predicates:
