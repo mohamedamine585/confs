@@ -7,7 +7,7 @@ spring:
       enable-auto-commit: true
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-    producer:      
+    producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
   datasource:
@@ -28,13 +28,13 @@ spring:
     user: ${spring.datasource.username}
     password: ${spring.datasource.password}
 eureka:
-    
-    client:
-      serviceUrl:
-        defaultZone: http://discovery:8761/eureka/
+
+  client:
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+  instance:
     instance:
-      instance:
-      prefer-ip-address: true
+    prefer-ip-address: true
 
 server:
   port: 8050
