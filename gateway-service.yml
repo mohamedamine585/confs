@@ -6,7 +6,7 @@ spring:
           enabled: true 
       routes:
         - id: product-websocket
-          uri: lb:ws://PRODUCT-SERVICE
+          uri: ws://product:8050
           predicates:
             - Path=/api/v1/products/**
           filters:
