@@ -5,12 +5,6 @@ spring:
         corsConfigurations:
           '[/**]':
             allowedOrigins: "*"
-            allowedHeaders: "*"
-            allowedMethods:
-            - GET
-            - POST
-            - DELETE
-            - PUT
       discovery:
         locator:
           enabled: true 
