@@ -14,7 +14,7 @@ spring:
             - SetRequestHeader=Upgrade, websocket  # Ensure Upgrade header is set to 'websocket'
 
         - id: product-service
-          uri: lb://product:8050
+          uri: http://product:8050
           predicates:
             - Path=/api/v1/product/**
 
