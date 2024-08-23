@@ -23,8 +23,6 @@ spring:
           filters:
             - SetRequestHeader=Connection, Upgrade  # Ensure Connection header is set to 'Upgrade'
             - SetRequestHeader=Upgrade, websocket  # Ensure Upgrade header is set to 'websocket'
-            
-
         - id: product-service
           uri: lb://PRODUCT-SERVICE
           predicates:
