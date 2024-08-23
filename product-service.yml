@@ -33,8 +33,6 @@ eureka:
       defaultZone: http://discovery:8761/eureka/
     register-with-eureka: true
     fetch-registry: true
-  instance:
-    instanceId: ${spring.application.name}
 
 server:
   port: 8050
