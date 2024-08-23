@@ -19,14 +19,14 @@ spring:
         - id: product-service
           uri: lb://product-service
           predicates:
-            - Path= /api/v1/products/**
+            - Path=/api/v1/products/**
           filters:
             - SetRequestHeader=Connection, Upgrade  # Ensure Connection header is set to 'Upgrade'
             - SetRequestHeader=Upgrade, websocket  # Ensure Upgrade header is set to 'websocket'
         - id: product-service
           uri: lb://product-service
           predicates:
-            - Path= /api/v1/product/**
+            - Path=/api/v1/product/**
 
 
        
