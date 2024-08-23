@@ -16,7 +16,7 @@ spring:
         locator:
           enabled: true 
       routes:
-        - id: product-websocket
+        - id: product-service
           uri: lb://product-service
           predicates:
             - Path= /api/v1/products/**
