@@ -4,9 +4,6 @@ spring:
       discovery:
         locator:
           enabled: true 
-    loadbalancer:
-      ribbon:
-        enabled: true
       routes:
         - id: product-websocket
           uri: lb://PRODUCT-SERVICE
