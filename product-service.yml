@@ -34,7 +34,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
   instance:
-    instanceId: ${spring.application.name}:${random.value}
+    instanceId: ${spring.application.name}
     prefer-ip-address: true
 
 server:
