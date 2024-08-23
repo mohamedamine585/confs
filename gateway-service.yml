@@ -39,6 +39,8 @@ eureka:
         defaultZone: http://discovery:8761/eureka/
       register-with-eureka: true
       fetch-registry: true
+      webclient:
+        enabled: true
     instance:
       instanceId: ${spring.application.name}:${random.value}
         
