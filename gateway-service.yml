@@ -35,8 +35,6 @@ eureka:
     client:
       serviceUrl:
         defaultZone: http://discovery:8761/eureka/
-      register-with-eureka: true
-      fetch-registry: true
       webclient:
         enabled: true
     instance:
