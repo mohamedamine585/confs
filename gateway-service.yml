@@ -4,6 +4,13 @@ spring:
         discovery:
            locator:
               enabled: true
-        
+eureka:
+
+    client:
+      serviceUrl:
+        defaultZone: http://discovery:8761/eureka/
+    instance:
+      instance-id: ${spring.application.name}:${random.uuid}
+      prefer-ip-address: true        
 server:
   port: 8222
