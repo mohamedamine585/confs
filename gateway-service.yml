@@ -5,10 +5,10 @@ zuul:
   routes:
     product-ws:
       path: /api/v1/products/**
-      serviceId: PRODUCT-SERVICE
+      serviceId: product-service
     product:
       path: /api/v1/product/**
-      serviceId: PRODUCT-SERVICE
+      serviceId: product-service
 eureka:
   client:
     service-url:
