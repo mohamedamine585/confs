@@ -9,7 +9,7 @@ zuul:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/  # Eureka server URL
+      defaultZone: http://discovery:8761/eureka/  # Eureka server URL
     register-with-eureka: true
     fetch-registry: true
   instance:
