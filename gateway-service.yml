@@ -1,3 +1,6 @@
+spring:
+  main:
+    web-application-type: reactive
 zuul:
   routes:
     product-ws:
