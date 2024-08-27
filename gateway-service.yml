@@ -16,14 +16,6 @@ spring:
           uri: lb://PRODUCT-SERVICE
           predicates:
             - Path=/api/v1/product/**
-zuul:
-  routes:
-    product-ws:
-      path: /api/v1/products/**
-      serviceId: product-service
-    product:
-      path: /api/v1/product/**
-      serviceId: product-service
 eureka:
   client:
     service-url:
